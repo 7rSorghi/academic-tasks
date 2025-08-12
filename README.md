@@ -19,8 +19,10 @@ This repository serves as a portfolio of programming and language tasks complete
 (Esse repositório serve como um portfólio de tarefas escolares de programação e língua portuguesa.)
 
 ✅ Status
+
 🚧 In progress — new tasks will be added soon!
 (Em andamento — novas atividades serão adicionadas em breve!)
+
 
 
 
