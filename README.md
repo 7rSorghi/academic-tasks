@@ -14,14 +14,6 @@ This project contains academic tasks focused on:
 - Portugol language exercises  
   (Atividades da disciplina de Portugol)
 
-## 🗂 Project Structure
-
-academic-tasks/
-│
-├── index.html # HTML example page (página HTML de exemplo)
-├── README.md # Project documentation (documentação do projeto)
-└── (More files coming soon - mais arquivos em breve)
-
 🎯 Goal
 This repository serves as a portfolio of programming and language tasks completed during school.
 (Esse repositório serve como um portfólio de tarefas escolares de programação e língua portuguesa.)
@@ -29,5 +21,6 @@ This repository serves as a portfolio of programming and language tasks complete
 ✅ Status
 🚧 In progress — new tasks will be added soon!
 (Em andamento — novas atividades serão adicionadas em breve!)
+
 
 
