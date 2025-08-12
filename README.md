@@ -11,8 +11,8 @@ This project contains academic tasks focused on:
   (Programação em C# — orientada a objetos, lógica, estruturas de dados)
 - Web development with HTML and CSS  
   (Desenvolvimento web com HTML e CSS)
-- Portuguese language exercises  
-  (Atividades da disciplina de Português)
+- Portugol language exercises  
+  (Atividades da disciplina de Portugol)
 
 ## 🗂 Project Structure
 
@@ -22,16 +22,6 @@ academic-tasks/
 ├── README.md # Project documentation (documentação do projeto)
 └── (More files coming soon - mais arquivos em breve)
 
-
-## 🚀 How to Use
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/your-username/academic-tasks.git
-2. Open the folder in your code editor:
-   cd academic-tasks
-3. Start exploring or editing the files!
-
 🎯 Goal
 This repository serves as a portfolio of programming and language tasks completed during school.
 (Esse repositório serve como um portfólio de tarefas escolares de programação e língua portuguesa.)
@@ -39,4 +29,5 @@ This repository serves as a portfolio of programming and language tasks complete
 ✅ Status
 🚧 In progress — new tasks will be added soon!
 (Em andamento — novas atividades serão adicionadas em breve!)
+
 
