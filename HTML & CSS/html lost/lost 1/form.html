@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        input, textarea, select {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: lightblue;
+            color: darkblue;
+        }
+        div {
+            margin-bottom: 10px;
+        }
+        input::placeholder {
+            color: darkblue;
+        }
+        .botao-container {
+            display: flex;
+            justify-content: center;
+        }
+        button {
+            background-color: aqua;
+            padding: 10px 30px;
+            border-radius: 10px;
+            border: none;
+            cursor: crosshair;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="Label1">
+            <label for="input-nome">Nome</label>
+            <input type="text" id="input-nome" name="Nome" placeholder="Digite seu nome">
+        </div>  
+        <div class="Label2">
+            <label for="input-mensagem">Mensagem</label>
+            <textarea name="mensagem" id="input-mensagem" placeholder="Digite a mensagem">Digite a mensagem</textarea>
+        </div>
+        <div class="label3">
+            <label for="input-opcao">Opções</label>
+            <select name="opcao" id="input-opcao">
+                <option value="opcao1">Arthur</option>
+                <option value="opcao2">Xamuel</option>
+                <option value="opcao3">Devilzinha</option>
+            </select>
+        </div>
+        <div class="botao-container">
+            <button title="submit">Enviar</button>
+        </div>
+    </form>
+</body>
+</html>
