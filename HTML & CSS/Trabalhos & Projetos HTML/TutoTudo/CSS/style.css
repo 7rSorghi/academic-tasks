@@ -1,0 +1,318 @@
+.destaque {
+    background-color: #243d58;
+    padding: 20px;
+    width: 30%;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.destaque h3 {
+    color: #e0e1dd;
+    margin-bottom: 15px;
+}
+
+.destaque p {
+    color: #778da9;
+    margin-bottom: 20px;
+}
+footer {
+  background-color: #1b263b;
+  color: #e0e1dd;
+  padding: 15px 0px;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  position: relative; 
+  font-size: 14px;
+  box-sizing: border-box;
+
+}
+
+
+    .sobre-aside {
+        float: left;
+        margin-top: 30px;
+    }
+
+
+
+.container-sobre {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    max-width: 1000px;
+    margin: 100px auto 50px;
+    gap: 40px;
+    padding: 0 20px;
+    float: left, top;
+}
+
+/* Conteúdo principal */
+.sobre {
+    text-align: left;
+    background-color: #f8f9fa;
+    padding: 40px 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    line-height: 1.8;
+    color: #0d1b2a;
+}
+
+.sobre-aside {
+    background-color: #e9f0fb;
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    color: #1b263b;
+    font-size: 16px;
+}
+
+.sobre-aside h2 {
+    margin-bottom: 15px;
+    color: #415a77;
+}
+
+.sobre-aside ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.sobre-aside li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.contato label {
+    font-weight: bold;
+}
+
+.contato button {
+    margin-top: 15px;
+    background-color: #415a77;
+    color: #e0e1dd;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.contato button:hover {
+    background-color: #1b263b;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0e1dd;
+    color: #0d1b2a;
+}
+
+header {
+    background-color: #1b263b;
+    color: #e0e1dd;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 15px;
+    display: inline-flex;
+}
+
+nav a {
+    color: #e0e1dd;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #415a77;
+    color: #e0e1dd;
+}
+
+main {
+    padding: 30px;
+    text-align: center;
+}
+
+.botao-principal {
+    background-color: #415a77;
+    color: #e0e1dd;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.botao-principal:hover {
+    background-color: #1b263b;
+}
+
+.conteudo-destaque {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.destaques {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte quando não houver espaço */
+}
+.footer-index {
+    position: absolute;
+}
+
+footer p {
+    font-size: 14px;
+}
+.intro p {
+    padding: 50px;
+}
+.contato {
+    margin-top: 100px;
+}
+.contato-sobre {
+    font-weight: bold;
+}
+.contato-sobre:hover {
+    background-color: lightblue;
+}
+.lista-tutoriais {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.tutorial {
+    background-color: #e0e1dd;
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    color: #1b263b;
+    line-height: 1.6;
+}
+
+.tutorial h2 {
+    margin-bottom: 15px;
+    color: #415a77;
+}
+
+.tutorial pre {
+    text-align: left;
+    background-color: #1b263b;
+    color: #e0e1dd;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 20px;
+}
+
+.tutorial a {
+    color: #415a77;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.tutorial a:hover {
+    color: #1b263b;
+    background-color: lightblue;
+}
+.diy-intro {
+    max-width: 900px;
+    margin: 80px auto 40px;
+    padding: 0 20px;
+    text-align: center;
+    color: #0d1b2a;
+}
+
+.lista-projetos {
+    max-width: 900px;
+    margin: 0 auto 80px;
+    padding: 0 20px;
+}
+
+.projeto {
+    background-color: #f8f9fa;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
+    color: #0d1b2a;
+    line-height: 1.7;
+}
+
+.projeto h2 {
+    margin-bottom: 20px;
+    color: #1b263b;
+    font-size: 28px;
+}
+
+.projeto ul {
+    padding-left: 20px;
+    margin: 15px 0;
+}
+
+.projeto ul li {
+    margin-bottom: 10px;
+}
+
+.projeto p strong {
+    color: #415a77;
+}
+
+@media (max-width: 700px) {
+    .projeto {
+        padding: 20px;
+    }
+    .projeto h2 {
+        font-size: 22px;
+    }
+}
+a {
+  color: #415a77;        
+  font-weight: bold;      
+  text-decoration: none;  
+  cursor: pointer;
+}
+
+a:hover, a:focus {
+  color: #1b263b;        
+  text-decoration: underline;
+  outline: none;
+  background-color: lightblue;
+}
+header img {
+    height: 60px;          /* ajusta o tamanho da logo */
+    width: auto;           /* mantém proporção */
+    border-radius: 8px;    /* cantos arredondados (opcional) */
+    transition: 0.3s ease; /* animação suave */
+}
+
+header img:hover {
+    transform: scale(1.05); /* efeito zoom ao passar o mouse */
+}
