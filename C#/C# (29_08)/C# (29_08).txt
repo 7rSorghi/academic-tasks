@@ -1,0 +1,51 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // Create an algorithm/program that reads 10 names from the keyboard.
+            // Then receive a name and check if it is among the names entered in the array.
+            // (Faça um algoritmo/programa que leia 10 nomes a partir do teclado.
+            // Em seguida receba um nome e verifique se ele se encontra entre os nomes inseridos no vetor)
+
+            string[] names = new string[10];
+            string Search;
+            bool isFound = false;
+
+            for (int i = 0; i < 10; i++)
+            {
+                Console.Write("Enter the {0}º name: ", i + 1);
+                names[i] = Console.ReadLine();
+            }
+
+            Console.WriteLine("\n---------------------------------------------");
+            Console.Write("Enter the name you want to check if it's in the list: ");
+            Search = Console.ReadLine();
+
+            for (int i = 0; i < 10; i++)
+            {
+                if (Search == names[i])
+                {
+                    isFound = true;
+                }
+            }
+
+            if (isFound == true)
+            {
+                Console.WriteLine("\nThe name {0} is in the list.", Search);
+            }
+            else
+            {
+                Console.WriteLine("The name {0} is not in the list.", Search);
+            }
+            Console.ReadKey();  
+        }
+    }
+}
