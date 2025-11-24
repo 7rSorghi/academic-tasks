@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Fofoquei</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="noticias.css">
+    <link rel="icon" type="image/png" href="imagens/favicon.png">
+</head>
+<body>
+
+    
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a href="../Inicio/index.html" class="navbar-brand">Fofoquei | JornalIF</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="../Inicio/index.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="../Noticias + contato/noticias.html" class="nav-link">Notícias</a></li>
+                    <li class="nav-item"><a href="../Noticias + contato/contato.html" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <br><br><br><br>
+
+    
+    <div class="container mt-5 mb-5 Secondary">
+        <h2 class="text-center mb-4">Nos Contate Aqui!</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="p-4 bg-secondary rounded shadow-sm">
+
+                    <form id="contactForm" onsubmit="return validateForm()">
+                        <div class="mb-3">
+                            <label class="form-label">Nome</label>
+                            <input type="text" class="form-control" placeholder="Seu nome" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Número</label>
+                            <input type="text" class="form-control" placeholder="(00) 00000-0000" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" placeholder="email@exemplo.com" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Comentário</label>
+                            <textarea class="form-control" rows="4" placeholder="Escreva sua opinião sobre o site" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-danger w-100">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p class="col12 text-center align-items-center">
+            &copy; 2025 Fofoquei. Todos os direitos reservados.
+        </p>
+    </footer>
+
+    <script>
+    function validateForm() {
+        // Obtém os valores dos campos
+        const name = document.getElementById('name').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const comment = document.getElementById('comment').value.trim();
+        
+        let isValid = true;
+        let errorMessage = ''; // Para coletar mensagens de erro
+
+        // --- 1. Validação de Campos Vazios ---
+        if (name === '' || phone === '' || email === '' || comment === '') {
+            errorMessage += 'Por favor, preencha todos os campos obrigatórios.\n';
+            isValid = false;
+        }
+        
+        // --- 2. Validação de Email (Regex simples) ---
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(email) && email !== '') { // Verifica email inválido, mas não vazio (já checado acima)
+            errorMessage += 'Por favor, insira um email válido.\n';
+            isValid = false;
+        }
+        
+        // Se a validação FALHAR, exibe o alerta de erro
+        if (!isValid) {
+            alert('Erro no Envio:\n' + errorMessage);
+            return false; // Impedir envio
+        }
+
+        // Se a validação for BEM-SUCEDIDA (isValid é true)
+        if (isValid) {
+            // Simula o sucesso do envio
+            alert('🥳 Obrigado pelo seu contato! Sua mensagem foi enviada com sucesso (simulação).');
+            
+            // Limpar o formulário após o "envio"
+            document.getElementById('contactForm').reset();
+
+            // O retorno 'false' impede o recarregamento da página pelo formulário
+            return false; 
+        }
+
+        // Por segurança, retornar false se algo inesperado acontecer
+        return false;
+    }
+</script>
+</body>
+</html>
